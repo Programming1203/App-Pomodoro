@@ -3,6 +3,7 @@ import {
   View,
   Platform,
 } from "react-native";
+import { Audio } from "expo-av";
 import Header from "../../molecules/header";
 import Timer from "../../atoms/timer";
 import Button from "../../atoms/button";
@@ -42,8 +43,16 @@ const Pomodoro: React.FC<PomodoroProps> = ({ onColorChange }) => {
   }, [isActive, time, isWorking, onColorChange(colors[currentTime])]);
 
   const handleStartStop = () => {
+    playSound();
     setIsActive((prev) => !prev);
   };
+
+  async function playSound() {
+    const { sound } = await Audio.Sound.createAsync(
+      require("../../../../assets/click.mp3")
+    );
+    await sound.playAsync();
+  }
 
   return (
       <View
