@@ -1,5 +1,4 @@
 # Pomodoro-App-React-Native
-# Pomodoro-App-React-Native
 
 ## Description
 
