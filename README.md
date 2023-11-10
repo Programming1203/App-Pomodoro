@@ -23,5 +23,5 @@ Pomodoro App is a simple app developed in React Native to help you apply the Pom
 ![Pomodoro1](https://github.com/Programming1203/Pomodoro-App-React-Native/assets/145875598/38011e1a-0f60-4e49-8fbb-96768fb85010)
 
 ## Contributors
-This project was developed by Bibeli García and José Luis Galán
+This project was developed by Bibeli García (202105-13) and José Luis Galán(2021-0170)
 
