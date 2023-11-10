@@ -39,7 +39,7 @@ const Pomodoro: React.FC<PomodoroProps> = ({ onColorChange }) => {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [isActive, time, isWorking, onColorChange]);
+  }, [isActive, time, isWorking, onColorChange(colors[currentTime])]);
 
   const handleStartStop = () => {
     setIsActive((prev) => !prev);
